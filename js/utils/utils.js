@@ -397,5 +397,5 @@ $(document).ready(function () {
 
 window.changePageView=function(str){
     console.log(str)
-    $(".view_detail",$(window.parent.document)).attr("src",str)
+    $(".view_detail",$(window.parent.document)).attr("src","https://gf521123.github.io/laoliu.github.io"+str)
 }
