@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+}
+.leftDiv{
+    background: #41555d;
+    width: 13%;
+    height: 100%;
+    float: left;
+}
+.rightDiv{
+    float: right;
+    width: 87%;
+    height: 100%;
+}
+header{
+    display:flex;
+    background: #2b6964;
+    height:50px;
+    box-shadow: 0 4px 1px rgba(0,0,0,.15);
+}
+.homeTitle{
+    color:#b0ddce;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-decoration: auto;
+}
+a{
+    cursor: pointer;
+}
+.navigation {
+    z-index: 99;
+    top: 60px;
+    left: 13.4%;
+    position: absolute;
+    border: none;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+}
+#menu {
+    position: fixed;
+    padding-right: 20px;
+    right: 0;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+#menu .menu-item {
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#menu .menu-item-link {
+    font-size: 12px;
+    color: #b0ddce;
+}
+a {
+    color: #069;
+    text-decoration: none;
+}
+iframe{
+    width: 100%;
+    border-width: 0px;
+}
+.navigation_div{
+    height: 100%;
+}
+.footer{
+    height: 35px;
+    left:0;/*  IE下一定要记得   */
+    position: absolute;
+    bottom: 0;
+    background-color: #f5f6f7;
+    left: 13%;
+    width: 87%;
+}
+.view_detail{
+    height: 100%;
+}
