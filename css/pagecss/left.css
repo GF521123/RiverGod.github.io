@@ -16,5 +16,6 @@ a:hover{
     text-decoration:revert;
 }
 #tree ul{
-    padding: 0 5px 5px 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
