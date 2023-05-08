@@ -65,6 +65,35 @@
       <li>数组（默认值null）  </li>
     </div>
 
+    <hr>
+    <h2>4. Java 中 final 关键字的作用是什么？</h2>
+    <div class="divViewDetails">
+      <li>final 修饰的类：叫最终类，不能被继承</li>
+      <li>final 修饰的方法：叫最终方法，不能被重写，但可以被继承</li>
+      <li>final 修饰的变量：叫常量，必须初始化，初始化之后值不能被修改</li>
+    </div>
+    <hr>
+    <h2>5. final, finally, finalize的区别</h2>
+    <div class="divViewDetails">
+      <li>final：用于声明属性方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。</li>
+      <li>finally：是异常处理语句结构的一部分，表示总是执行，一定会执行。如果try里有一个return语句，会在return前执行finally中的代码。</li>
+      <li>finalize：是Object类的方法，执行gc时会调用此方法，可以覆盖此方法提供垃圾收集时其他资源的回收，比如关闭文件等。</li>
+    </div>
+    <h2>6. 栈（stack）和堆（heap）的区别</h2>
+    <div class="divViewDetails">
+      <li>栈：是为函数中基本类型的变量和对象的引用变量分配内存，是由系统自动分配，获得的空间比较小，但是速度会比 较快，储存空间是连续的。</li>
+      <li>堆：是为函数创建的对象分配内存，通常是使用new关键字来实现的，是人为申请开辟，获得的空间比较大，但是速 度会比较，储存空间是不连续的。</li>
+    </div>
+    <h2>7. throw和throws的区别</h2>
+    <div class="divViewDetails">
+      <li>throw:就是自己处理一个异常，通常使用try…catch代码块捕获处理异常</li>
+      <li>不对异常做任何处理而是将异常往上传，谁调用我我就抛给谁</li>
+    </div>
+    <h2>8. cookie 和session 的区别</h2>
+    <div class="divViewDetails">
+      <li>cookie：不是很安全，它的数据是存放在客户的浏览器上，单个cookie保存的数据不能超过4K。</li>
+      <li>session：比较安全，它会在一定时间内保存在服务器上，但是当访问增多，会比较占用服务器的性能，所以考虑到减 轻服务器性能方面，应当使用cookie。</li>
+    </div>
 
 
 

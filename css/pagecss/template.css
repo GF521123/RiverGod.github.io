@@ -1,4 +1,10 @@
-
+body{
+    padding: 0px;
+    margin: 0px;
+    /* max-width: 850px; */
+    width: 70%;
+    padding: 30px 15%;
+}
 #totop-toggle {
     position: fixed;
     bottom: 80px;
@@ -35,5 +41,4 @@ th{
 tr td{
     border: 1px solid #ccc;
     padding: 5px;
-
 }
