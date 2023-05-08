@@ -18,3 +18,22 @@
     padding-left: 25px;
     padding-right: 25px;
 }
+.addOther{
+    font-weight:bold;
+}
+table{
+    max-width: 100%;
+    /* margin: auto; */
+    border-collapse: collapse;   
+     display: table;
+}
+th{
+    border: 1px solid #ccc;
+    background-color:#EDEDED ;
+    padding: 5px;
+}
+tr td{
+    border: 1px solid #ccc;
+    padding: 5px;
+
+}
