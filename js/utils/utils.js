@@ -371,30 +371,6 @@ $(document).ready(function () {
   }
 
   
-
-  
-//   // 初始化循环递归隐藏父节点
-//   function hideActiveTree(jqNode, isSiblings) {
-//         if (jqNode.is("ul")) {
-//             jqNode.css("display", "none");
-    
-//         // 这个 isSiblings 是给搜索用的
-//         // true 就显示开同级兄弟节点
-//         // false 就是给搜索用的，值需要展示它自己就好了，不展示兄弟节点
-//             if (isSiblings) {
-//                 jqNode.siblings().css("display", "none");
-//                 jqNode.siblings("a").css("display", "inline");
-//                 jqNode.siblings("a").find(".fa-plus-square-o").removeClass(
-//                     "fa-plus-square-o").addClass("fa-minus-square-o");
-//             }
-//         }
-//         jqNode.each(function () {
-//            hideActiveTree($(this).parent(), isSiblings);
-//         });
-        
-    
-//   }
-
 window.changePageView=function(str){
     console.log(str)
     $(".view_detail",$(window.parent.document)).attr("src","."+str)
