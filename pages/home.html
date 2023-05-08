@@ -1,61 +1,17 @@
 <html>
     <head>
         
-        <link rel="stylesheet" href="../css/pagecss/text.css">
+      <link rel="stylesheet" href="../css/pagecss/text.css">
+      <link rel="stylesheet" href="../css/pagecss/template.css">
         <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="../js/utils/utils.js"></script>
+        <script src="../js/pagejs/template.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-        <script>
-            // 页面滚动
-function pageScroll() {
-  var start_hight = 0;
-  $(window).on('scroll', function () {
-    var end_hight = $(window).scrollTop();
-    var distance = end_hight - start_hight;
-    start_hight = end_hight;
-    var $header = $('#header');
-    if (distance > 0 && end_hight > 50) {
-      $header.hide();
-    } else if (distance < 0) {
-      $header.show();
-    } else {
-      return false;
-    }
-  })
-}
-// 回到顶部
-function scrollToTop() {
-  $("#totop-toggle").on("click", function (e) {
-    console.log("asdf")
-    console.log($("body").animate())
-    $("body").animate({scrollTop: 0}, 200);
-  });
-}
-
-        </script>
-
-        <style>
-            #totop-toggle {
-    position: fixed;
-    bottom: 80px;
-    right: 50px;
-}
-.toggle {
-    border: none;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    transition: all .3s ease-in-out;
-    opacity: .5;
-}
-        </style>
     </head>
 
     <body>

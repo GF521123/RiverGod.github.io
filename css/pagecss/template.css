@@ -1,0 +1,20 @@
+
+#totop-toggle {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+}
+.toggle {
+    border: none;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    transition: all .3s ease-in-out;
+    opacity: .5;
+}
+.divViewDetails{
+    padding-left: 25px;
+    padding-right: 25px;
+}
