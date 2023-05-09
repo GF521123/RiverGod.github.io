@@ -42,3 +42,16 @@ tr td{
     border: 1px solid #ccc;
     padding: 5px;
 }
+.hr-hei-xu{
+    border:1px dashed #000; 
+    height:1px
+}
+.hr-hei-xu-dan{
+    border:1px dotted #036
+}
+.hr-blue-xu-dan{
+    border : 1px dashed blue;
+}
+pre{
+    background-color: #fafafa;
+}
