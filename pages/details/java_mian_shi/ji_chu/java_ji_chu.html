@@ -4,12 +4,12 @@
   <title>java面试题-基础</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <link rel="stylesheet" href="../../../../css/pagecss/template.css">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="../../../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="../../../../js/Jquery/jquery-3.6.4.min.js"></script>
   <script src="../../../../js/utils/utils.js"></script>
   <script src="../../../../js/pagejs/template.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="../../../../js/highlightjs/highlight.min-11.7.0.js"></script>
+  <script src="../../../../js/fancyBox/jquery.fancybox.min-3.5.7.js"></script>
 </head>
 
 <body>
@@ -398,114 +398,17 @@
     </code>
   </pre>
   <hr class="hr-hei-xu">
+  
 
+  
+  <h2>面向对象</h2>
+  <hr class="hr-blue-xu-dan" />
 
-  <!-- 
-    <hr class = "hr-hei-xu">
-    <h2>1. JDK 和 JRE 有什么区别？</h2>
-    <div class="divViewDetails">
-        <li>JDK：Java Development Kit 的简称，Java 开发工具包，提供了 Java 的<span style="color: red;">开发环境和运行环境。</span></li>
-        <li>JRE：Java Runtime Environment 的简称，Java 运行环境，为 Java 的<span style="color: red;">运行提供了所需环境。</span>    </li>
-        <span class="addOther">补充： </span>JDK 包含了 JRE，同时还包含了编译 java 源码的编译器 javac，还包含了很多 java 程序调试和分析的工具。简单来说：如果你需要运行 java 程序，只需安装 JRE 就可以了，如果你需要编写 java 程序，就需要安装 JDK。
-    </div>
-    <hr class = "hr-hei-xu">
-    <h2>2. == 和 equals 的区别是什么？</h2>
-    <div class="divViewDetails">
-      基本类型和引用类型 == 的作用效果是不同的
-      <li>基本类型：比较的是值是否相同；</li>
-      <li>引用类型：比较的是引用是否相同；</li>
-      <span class="addOther">补充：</span><span style="color: red;">== 对于基本类型比较的是值，对于引用类型比较的是引用</span>；<span style="color: red;">而 equals 默认情况下是引用比较</span>，只是很多类重写了 equals 方法，比如 String、Integer 等把它变成了值比较，所以一般情况下 equals 比较的是值是否相等。
-    </div>
-    <h2>3. Java中有哪些数据类型？ </h2>
-    <div class="divViewDetails">
-      基本类型（8种基本数据类型，分类四大类型）
-      <table class="table" border="0">
-        <th>数据类型</th><th>关键字</th><th>默认值</th><th>大小/位</th><th>占字节数</th><th>数据范围</th>
-        <tr class="tr_one">
-          <td>字节类型</td> <td>byte(字节型)</td> <td>(byte)0</td> <td>8</td> <td>1</td> <td>-128 ~ 127</td>
-        </tr>
-        <tr class="tr_two">
-          <td>整数类型</td><td>short(短整数)</td><td>(short)0</td><td>16</td><td>2</td><td>-32768 ~ 32767</td>
-        </tr>
-        <tr class="tr_one">
-          <td>整数类型</td><td>int(整数型)</td><td>0</td><td>32</td><td>4</td><td>-2147483648 ~ 2147483647</td>
-        </tr>
-        <tr class="tr_two">
-          <td>整数类型</td><td>long(长整数)</td><td>0L</td><td>64</td><td>8</td><td>-9223372036854775808～9223372036854775807 </td>
-        </tr>
-        <tr class="tr_one">
-          <td>浮点类型</td><td>float(单精度)</td><td>0.0f</td><td>32</td><td>4</td><td>-3.4E38 ～ 3.4E38</td>
-        </tr>
-        <tr class="tr_two">
-          <td>浮点类型</td><td>double(双精度)</td><td>0.0d</td><td>64</td><td>8</td><td>-1.7E308 ～ 1.7E308	</td>
-        </tr>
-        <tr class="tr_one">
-          <td>布尔类型</td><td>boolean(布尔型)</td><td>false</td><td>--</td><td>1</td><td>true 或 false </td>
-        </tr>
-        <tr class="tr_two">
-          <td>字符类型</td><td>char(字符型)</td><td>\u0000(空,"")</td><td>16</td><td>2</td><td>0 ～ 255</td>
-        </tr>
-      </table>
-      引用类型
-      <li>类（默认值null） </li>
-      <li>接口（默认值null） </li>
-      <li>数组（默认值null）  </li>
-    </div>
+  <h3>面向对象概述</h3>
+  <hr class="hr-blue-xu-dan" />
 
-    <hr class = "hr-hei-xu">
-    <h2>4. Java 中 final 关键字的作用是什么？</h2>
-    <div class="divViewDetails">
-      <li>final 修饰的类：叫最终类，不能被继承</li>
-      <li>final 修饰的方法：叫最终方法，不能被重写，但可以被继承</li>
-      <li>final 修饰的变量：叫常量，必须初始化，初始化之后值不能被修改</li>
-    </div>
-    <hr class = "hr-hei-xu">
-    <h2>5. final, finally, finalize的区别</h2>
-    <div class="divViewDetails">
-      <li>final：用于声明属性方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。</li>
-      <li>finally：是异常处理语句结构的一部分，表示总是执行，一定会执行。如果try里有一个return语句，会在return前执行finally中的代码。</li>
-      <li>finalize：是Object类的方法，执行gc时会调用此方法，可以覆盖此方法提供垃圾收集时其他资源的回收，比如关闭文件等。</li>
-    </div>
-    <h2>6. 栈（stack）和堆（heap）的区别</h2>
-    <div class="divViewDetails">
-      <li>栈：是为函数中基本类型的变量和对象的引用变量分配内存，是由系统自动分配，获得的空间比较小，但是速度会比 较快，储存空间是连续的。</li>
-      <li>堆：是为函数创建的对象分配内存，通常是使用new关键字来实现的，是人为申请开辟，获得的空间比较大，但是速 度会比较，储存空间是不连续的。</li>
-    </div>
-    <h2>7. throw和throws的区别</h2>
-    <div class="divViewDetails">
-      <li>throw:就是自己处理一个异常，通常使用try…catch代码块捕获处理异常</li>
-      <li>不对异常做任何处理而是将异常往上传，谁调用我我就抛给谁</li>
-    </div>
-    <h2>8. cookie 和session 的区别</h2>
-    <div class="divViewDetails">
-      <li>cookie：不是很安全，它的数据是存放在客户的浏览器上，单个cookie保存的数据不能超过4K。</li>
-      <li>session：比较安全，它会在一定时间内保存在服务器上，但是当访问增多，会比较占用服务器的性能，所以考虑到减 轻服务器性能方面，应当使用cookie。</li>
-    </div>
-
-    <h2>9. Java面向对象的三个特征</h2>
-    <div class="divViewDetails">
-      <li>封装：对象只需要选择性的对外公开一些属性和行为。</li>
-      <li>继承：子对象可以继承父对象的属性和行为，并且可以在其之上进行修改以适合更特殊的场景需求。</li>
-      <li>多态：允许不同类的对象对同一消息做出响应。</li>
-    </div>
-    <h2>10. Collection和Collections的区别</h2>
-    <div class="divViewDetails">
-      <li>Collection是集合类上级接口，继承他的主要有List和Set</li>
-      <li>Collections是集合类的帮助类，提供了对集合的搜索、排序、线程安全化等操作。</li>
-    </div>
-    <h2>11. </h2>
-    <div class="divViewDetails">
-    </div>
-    <h2>12. </h2>
-    <div class="divViewDetails">
-    </div>
-    <h2>13. </h2>
-    <div class="divViewDetails">
-    </div>
-    <h2>14. </h2>
-    <div class="divViewDetails">
-    </div>
- -->
+  <h4>34. 面向对象和面向过程的区别</h4>
+  
 
 
 
