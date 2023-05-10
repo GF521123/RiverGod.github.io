@@ -22,3 +22,7 @@ function pageScroll() {
         $("body").animate({scrollTop: 0}, 200);
     });
     }
+
+    // $(function() {
+    //     $('a.media').media({width:'1200px', height:'900px'});
+    // });
